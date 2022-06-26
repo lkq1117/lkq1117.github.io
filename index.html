@@ -138,10 +138,9 @@
         if(rand < 10) rand = '00' + rand;
         else if(rand < 100) rand = '0' + rand;
         var path = "https://cdn.jsdelivr.net/gh/soicecream/pictures@v1.0/background/" + rand + ".jpg";
-        var bodys = document.body;
-        bodys.style.backgroundColor = '#e3fdfd';
-        bodys.style.backgroundImage = 'url(' + path + ')';
-        bodys.style.background_size = '100% 100%';
+        document.body.style.backgroundColor = '#e3fdfd';
+        document.body.style.backgroundImage = 'url(' + path + ')';
+        document.body.style.background_size = '100% 100%';
     }
     
 </script>
