@@ -133,13 +133,43 @@
 
     <!--  背景图设置  -->
     window.onload = function (){
-        let num = Math.floor(Math.random() * 30) + 1
-        if(num < 10) num = '00' + num
-        else if(num < 100) num = '0' + num
-        let path = "https://cdn.jsdelivr.net/gh/soicecream/pictures@main/background/" + num + ".jpg";
+        let background_img_text = "https://www.giaott.com/images/2022/07/01/a701.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/ajHR.png\n" +
+            "https://www.giaott.com/images/2022/07/01/a2r5.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/a116.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VtcV.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VY79.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VuN4.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VS4u.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/V9uZ.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VkFG.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VNpt.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VJ1y.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/V3nm.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VioA.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/Vg7M.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VnJi.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/Vmq7.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/Vb4w.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VDlN.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VGFf.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VFp0.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VXzS.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VWnP.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/V8Ms.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/V0jY.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VhJp.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/VThQ.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/Vw41.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/V5lR.jpg\n" +
+            "https://www.giaott.com/images/2022/07/01/Vosc.jpg";
+        let background_img_data = background_img_text.split("\n");
+
+        let num = Math.floor(Math.random() * background_img_data.length) + 1;
+        let path = background_img_data[num];
+        let path_url = "require(" + path + ")";
         document.body.style.backgroundColor = '#fcc8f8';
         document.body.style.backgroundImage = 'url(' + path + ')';
-        document.body.style.background_size = '100% 100%';
     }
 
 </script>
